@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="20dp"
+    android:layout_margin="10dp"
+    android:padding="15dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/hospital_name"
+            android:layout_width="fill_parent"
+            android:layout_toLeftOf="@id/hospital_price"
+            android:layout_height="wrap_content"
+            android:text="Sample Hospital"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/vaccine_name"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/hospital_price"
+            android:layout_height="wrap_content"
+            android:text="Covaxin"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/hospital_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/vaccine_name"
+            android:layout_margin="5dp"
+            android:id="@+id/view"
+
+            />
+        <TextView
+            android:id="@+id/hospital_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_below="@id/view"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/hospital_address"
+            android:layout_margin="5dp"
+            android:id="@+id/view2"
+
+            />
+        <TextView
+            android:id="@+id/hospial_sessions"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:text="Sessions"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "690769379148",
+    "project_id": "getslot-ccda7",
+    "storage_bucket": "getslot-ccda7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690769379148:android:477f9ffff1147a22f499e9",
+        "android_client_info": {
+          "package_name": "com.hackslash.getslot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690769379148-g2jt0jeso30d78tdgf2gnbslad6agufm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfbo9SKvYOFaNJx8SidaPtSAXNFVzauls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690769379148-g2jt0jeso30d78tdgf2gnbslad6agufm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

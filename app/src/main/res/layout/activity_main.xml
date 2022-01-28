@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Search For A Slot"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:textSize="30sp"
+    android:layout_above="@id/card"
+    />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_centerVertical="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="20dp"
+                    android:id="@+id/state"
+                    />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="20dp"
+                    android:id="@+id/district"
+                    android:layout_margin="5dp"
+                    />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/radio18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18+"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/radio45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="45+"
+                        android:layout_marginLeft="20dp"
+                        android:onClick="onRadioButtonClicked"/>
+                </RadioGroup>
+
+
+
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
